@@ -6,7 +6,7 @@ on:
       agent_name:
         description: 'The name of the agent (e.g., your username)'
         required: true
-        default: 'diemthuy'
+        default: 'NGOCTHUY'
       agent_description:
         description: 'A brief description of the agent (e.g., its purpose)'
         required: true
@@ -41,4 +41,4 @@ jobs:
       - name: Bước 3 - Xem link xác minh Agent
         run: |
           cd skills/verified-agent-identity/scripts
-          node manualLinkHumanToAgent.js --challenge "{\"name\": \"diemthuy\", \"description\": \"${{ inputs.agent_description }}\"}"
+          node manualLinkHumanToAgent.js --challenge "{\"name\": \"NGOCTHUY\", \"description\": \"${{ inputs.agent_description }}\"}"
